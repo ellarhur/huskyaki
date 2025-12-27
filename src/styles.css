@@ -2,8 +2,13 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color:#1E1E1E;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
   }
 
   header {
@@ -11,7 +16,8 @@ body, html {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding-top: 1.5rem;
+  padding-top: 1rem;
+  position: relative;
   }
 
   .content {
@@ -62,11 +68,72 @@ body, html {
     font-size:1.2rem;
   }
 
-  .centered-content {
-    text-align:center;
-    margin-top:15%;
-    font-size:1.2rem;
-    font-weight:bold;
-    color:white;
-    font-family: sans-serif;
+  nav ul li a:hover{
+    color:orange;
   }
+
+footer {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding: 1rem 0 1.25rem;
+}
+
+.footer-content ul {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.footer-content ul li {
+  margin:0 1rem;
+}
+
+.footer-content ul li a {
+  color:white;
+  text-decoration:none;
+  font-size:1.2rem;
+}
+
+.footer-content ul li a:hover{
+  color:orange;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.centered-content img {
+  width: clamp(240px, 55vw, 520px);
+  max-height: 60vh;
+  height: auto;
+  display: block;
+}
+
+.straybone-inthecorner {
+  align-self: flex-start;
+  width: 120px;
+  margin-left: 1rem;
+}
+
+.straybone-inthecorner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
