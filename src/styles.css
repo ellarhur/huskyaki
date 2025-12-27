@@ -3,16 +3,15 @@ body, html {
     padding: 0;
     height: 100%;
     overflow: hidden;
+    background-color:#1E1E1E;
   }
 
-  .video-background {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    object-fit: cover;
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
   }
 
   .content {
@@ -23,23 +22,51 @@ body, html {
     padding-top: 20%;
     font-family: sans-serif;
   }
-
-  .sidebar{
-    position: fixed;
-    top:0.3rem;
-    left:0.3rem
-  }
-
   .logopic{
   display:flex;
-  justify-content:left;
+  justify-content:center;
   width:200px;
   height:auto;
-  margin-left:1.5rem;
-  margin-bottom:1rem;
+  margin:0 auto;
   }
 
   .logopic img {
   width: 100%;
   height: auto;
+  }
+
+  nav {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    top:0.3rem;
+    left:0.3rem
+  }
+
+  nav ul {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+
+  nav ul li {
+    margin:0 1rem;
+  }
+
+  nav ul li a {
+    color:white;
+    text-decoration:none;
+    font-size:1.2rem;
+  }
+
+  .centered-content {
+    text-align:center;
+    margin-top:15%;
+    font-size:1.2rem;
+    font-weight:bold;
+    color:white;
+    font-family: sans-serif;
   }
