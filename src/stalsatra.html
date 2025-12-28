@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huskyaki Atelier</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="straybone-inthecorner">
+            <a href="landingpage.html" aria-label="Till startsidan">
+                <img src="img/stray-bone.png" alt="HUSKYAKI ATELIER">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">about</a></li>
+                <li><a href="work.html">work</a></li>
+                <li><a href="merch.html">merch</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div class="tabs">
+        <div class="tab-header">
+            <h2>stålsätra</h2>
+        </div>
+        <div class="tab-buttons" role="tablist" aria-label="stålsätra innehåll">
+            <button class="tab-button active" role="tab" aria-selected="true" aria-controls="tab-about" id="btn-about" data-target="tab-about">about</button>
+            <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-listen" id="btn-listen" data-target="tab-listen">listen</button>
+            <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-tracklisting" id="btn-tracklisting" data-target="tab-tracklisting">track listing</button>
+            <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-artwork" id="btn-artwork" data-target="tab-artwork">artwork</button>
+            <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-credits" id="btn-credits" data-target="tab-credits">credits</button>
+        </div>
+
+        <div class="tab-panels">
+            <section class="tab-panel active" id="tab-about" role="tabpanel" aria-labelledby="btn-about">
+                <p>It didn't start as an album. It was more than that from the start.</p> <br />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </section>
+
+            <section class="tab-panel" id="tab-listen" role="tabpanel" aria-labelledby="btn-listen" hidden>
+                <p>Listen to the album:</p>
+                <ul class="song-list">
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Apple Music</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Soundcloud</a></li>
+
+                </ul>
+            </section>
+
+            <section class="tab-panel" id="tab-tracklisting" role="tabpanel" aria-labelledby="btn-tracklisting" hidden>
+                <h3>Track listing</h3>
+                <ul class="song-list">
+                    <li>
+                        Mufumbiro
+                        <button class="lyrics-toggle" data-lyrics="lyrics-mufumbiro">Lyrics</button>
+                        <div class="lyrics-block" id="lyrics-mufumbiro" hidden>
+                            <p>Vi har skavsta-sår i lilla forden
+                            Men du är DJ, så ...
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        Flyger på nätterna
+                        <button class="lyrics-toggle" data-lyrics="lyrics-flyger">Lyrics</button>
+                        <div class="lyrics-block" id="lyrics-flyger" hidden>
+                            <p>Lovar aldrig skrämma dig igen...</p>
+                        </div>
+                    </li>
+                    <li>
+                        Hundarna
+                        <button class="lyrics-toggle" data-lyrics="lyrics-hundarna">Lyrics</button>
+                        <div class="lyrics-block" id="lyrics-hundarna" hidden>
+                            <p>blev något fel med kameran
+                                försökte skaka liv i oss
+                                spillde ner min bästa skjorta
+                                slängde bara på mig nåt
+                                
+                                gärdet sörjde hundarna
+                                så stod du där i samma rum
+                                tog hand om varje ord & skratt
+                                som råka trilla ur din mun
+                                
+                                kvällen längtar utanför 
+                                behöver bara sträcka oss
+                                försöker ta mig loss
+                                mitt hjärta så lost in translation
+                                
+                                hur kan man glömma dofter, piruetter
+                                rosa himmel, rosa skor
+                                jag vill aldrig förlora det
+                                jag vet inte vad jag höll på med
+                                
+                                jag är rädd för att bli övergiven
+                                jag är fake och gör fel hela tiden
+                                jag vill aldrig förlora det
+                                jag vill få dig att känna dig fri
+                                och vid liv
+                                
+                                vet att du har haft ett jobbigt år
+                                det är inget som du skyltar med
+                                för mig är du en whitney houston-sång
+                                slentrian, som jag vill höra om
+                                
+                                kvällen längtar utanför 
+                                behöver bara sträcka oss
+                                försöker ta mig loss
+                                vill inte missa ditt crazy kitten smile
+                                
+                                hur kan man glömma dofter, piruetter
+                                rosa himmel, rosa skor
+                                jag vill aldrig förlora det
+                                jag vet inte vad jag höll på med
+                                
+                                jag är rädd för att bli övergiven
+                                jag är fake och gör fel hela tiden
+                                men jag vill aldrig förlora dig
+                                jag vill få dig att känna dig fri
+                                och vid liv
+                                
+                                jag är rädd för att bli övergiven
+                                jag är fake och gör fel hela tiden
+                                men jag vill aldrig förlora dig
+                                jag vill få dig att känna dig fri
+                                och vid liv</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tab-panel" id="tab-artwork" role="tabpanel" aria-labelledby="btn-artwork" hidden>
+<div class="artwork-container"><img src="img/Stålsätra.jpeg" alt="Stålsätra"></div>
+            </section>
+
+            <section class="tab-panel" id="tab-credits" role="tabpanel" aria-labelledby="btn-credits" hidden>
+                <ul class="credits-list">
+                    <h3>Martin Åkesson Hummerdahl</h3>
+                    <p>Songwriting, recording, producing, mastering, sound editing, guitar, keys, bass</p>
+                    <h3>Elton Hummerdahl</h3>
+                    <p>Keys, music production, mastering</p>
+                    <h3>Andreas Hummerdahl</h3>
+                    <p>Bass, vocals & guitar</p>
+                    <h3>Oliver Hüller</h3>
+                    <p>Percussion & guitar</p>
+                    <h3>Ella Åkesson Hummerdahl</h3>
+                    <p>Vocals</p>
+                    <h3>Sara Freij Hummerdahl</h3>
+                    <p>Violin</p>
+
+
+                </ul>
+            </section>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-content">
+        <ul>
+            <li><a href="#">tiktok</a></li>
+            <li><a href="#">instagram</a></li>
+            <li><a href="#">youtube</a></li>
+        </ul>
+        <div class="copyright">© 2025 Huskyaki Atelier™. All rights reserved.</div>
+    </div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = Array.from(document.querySelectorAll('.tab-button'));
+  const panels = Array.from(document.querySelectorAll('.tab-panel'));
+  const lyricToggles = Array.from(document.querySelectorAll('.lyrics-toggle'));
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.dataset.target;
+      buttons.forEach(b => b.classList.toggle('active', b === btn));
+      buttons.forEach(b => b.setAttribute('aria-selected', b === btn ? 'true' : 'false'));
+      panels.forEach(p => {
+        const isActive = p.id === targetId;
+        p.classList.toggle('active', isActive);
+        p.hidden = !isActive;
+      });
+    });
+  });
+
+  lyricToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const targetId = toggle.dataset.lyrics;
+      const block = document.getElementById(targetId);
+      if (!block) return;
+      const wasHidden = block.hidden;
+      document.querySelectorAll('.lyrics-block').forEach(b => {
+        b.hidden = true;
+        b.classList.remove('open');
+      });
+      if (wasHidden) {
+        block.hidden = false;
+        block.classList.add('open');
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>
