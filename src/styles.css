@@ -8,7 +8,6 @@ body, html {
     background-color:#1E1E1E;
     color: white;
     font-family: 'DM Sans', sans-serif;
-    overflow: hidden;
   }
 
   header {
@@ -127,13 +126,21 @@ main {
 }
 
 .straybone-inthecorner {
-  align-self: flex-start;
-  width: 120px;
-  margin-left: 1rem;
+  position: absolute;
+  top: 0.75rem;
+  left: 1rem;
+  width: 110px;
 }
 
 .straybone-inthecorner img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
 }
