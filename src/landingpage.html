@@ -10,13 +10,18 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="has-hamburger">    
     <header>
-        <nav>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+            <span class="sr-only">Meny</span>
+            <span class="envelope-icon"></span>
+        </button>
+        <nav id="primary-nav">
             <ul>
+                <li><a href="landingpage.html">home</a></li>
                 <li><a href="about.html">about</a></li>
                 <li><a href="work.html">work</a></li>
-                <li><a href="merch.html">merch</a></li>
+                <li><a href="merch.html">support</a></li>
                 <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
@@ -36,5 +41,25 @@
         <div class="copyright">© 2025 Huskyaki Atelier™. All rights reserved.</div>
     </div>
 </footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('#primary-nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.classList.toggle('open', open);
+    });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.classList.remove('open');
+      });
+    });
+  }
+});
+</script>
 </body>
 </html>
