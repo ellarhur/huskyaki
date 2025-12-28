@@ -10,14 +10,18 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="has-hamburger">
     <header>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+            <span class="sr-only">Meny</span>
+            <span class="envelope-icon"></span>
+        </button>
         <div class="straybone-inthecorner">
             <a href="landingpage.html" aria-label="Till startsidan">
                 <img src="img/stray-bone.png" alt="HUSKYAKI ATELIER">
             </a>
         </div>
-        <nav>
+        <nav id="primary-nav">
             <ul>
                 <li><a href="about.html">about</a></li>
                 <li><a href="work.html">work</a></li>
@@ -276,6 +280,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const buttons = Array.from(document.querySelectorAll('.tab-button'));
   const panels = Array.from(document.querySelectorAll('.tab-panel'));
   const lyricToggles = Array.from(document.querySelectorAll('.lyrics-toggle'));
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('#primary-nav');
 
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -289,6 +295,21 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.classList.toggle('open', open);
+    });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.classList.remove('open');
+      });
+    });
+  }
 
   lyricToggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
