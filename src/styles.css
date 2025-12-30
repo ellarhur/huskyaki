@@ -111,7 +111,7 @@ body, html {
   right: 4px;
   height: 2px;
   background: white;
-  transition: transform 0.25s ease, top 0.25s ease;
+  transition: transform 0.25s ease, top 0.25s ease, opacity 0.2s ease;
 }
 
 .envelope-icon::before {
@@ -125,13 +125,22 @@ body, html {
 }
 
 .nav-toggle.open .envelope-icon::before {
-  top: 4px;
-  transform: rotate(-32deg);
+  opacity: 1;
+  top: 7px;
+  left: 6px;
+  right: 6px;
+  transform: none;
 }
 
 .nav-toggle.open .envelope-icon::after {
-  top: 4px;
-  transform: rotate(32deg);
+  opacity: 1;
+  top: 13px;
+  left: 6px;
+  right: 6px;
+  height: 2px;
+  background: white;
+  border: none;
+  transform: none;
 }
 
 body.has-hamburger header {
@@ -146,14 +155,24 @@ body.has-hamburger .nav-toggle {
 
 body.has-hamburger nav {
   width: 100%;
+  position: relative;
 }
 
 body.has-hamburger nav ul {
   display: none;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(260px, 90vw);
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.5rem 0 0.25rem;
+  padding: 0.75rem 0.5rem 0.85rem;
+  background:transparent;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  z-index: 10;
 }
 
 body.has-hamburger nav.open ul {
