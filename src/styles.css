@@ -235,6 +235,17 @@ main {
   display: block;
 }
 
+.logo-hero {
+  width: clamp(260px, 60vw, 560px);
+  margin: 0 auto;
+}
+
+.logo-hero img {
+  width: 800px;
+  height: auto;
+  display: block;
+}
+
 .tabs {
   position: relative;
   width: min(960px, 94vw);
@@ -391,10 +402,14 @@ main {
   position: absolute;
   top: 0.75rem;
   left: 3.5rem;
-  width: 110px;
 }
 
-.straybone-inthecorner img {
+.logo-container {
+  display: block;
+  width: 140px;
+}
+
+.logo-container img {
   width: 100%;
   height: auto;
   display: block;
