@@ -73,22 +73,17 @@ nav ul li a:hover{
 }
 
 .nav-toggle.open .envelope-icon::before {
-  opacity: 1;
   top: 7px;
   left: 6px;
   right: 6px;
-  transform: none;
+  transform: rotate(45deg);
 }
 
 .nav-toggle.open .envelope-icon::after {
-  opacity: 1;
-  top: 13px;
+  top: 7px;
   left: 6px;
   right: 6px;
-  height: 2px;
-  background: #FFF1C9;
-  border: none;
-  transform: none;
+  transform: rotate(-45deg);
 }
 
 body.has-hamburger header {
@@ -114,7 +109,7 @@ body.has-hamburger nav ul {
   position: absolute;
   top: 1rem;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-10%);
   width: min(260px, 90vw);
   flex-direction: column;
   align-items: center;

@@ -58,7 +58,58 @@ html {
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 1rem 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+.fixed-header > * {
+  pointer-events: auto;
+}
+
+/* Logo i vänstra hörnet - dold på första sidan */
+.logo-corner {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+  width: 140px;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: auto;
+}
+
+.logo-corner.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.logo-corner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo-corner a {
+  display: block;
+}
+
+/* Hamburger knappen - centrerad */
+.header-left {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1002;
+  display: flex;
+  justify-content: center;
+}
+
+.fixed-header .nav-toggle {
+  margin: 0;
 }
 
 .one-pager main {

@@ -11,10 +11,17 @@
 </head>
 <body class="has-hamburger landing-page one-pager">    
     <header class="fixed-header">
-        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
-            <span class="sr-only">Meny</span>
-            <span class="envelope-icon"></span>
-        </button>
+        <div class="logo-corner">
+            <a href="#home" aria-label="Till startsidan">
+                <img src="img/gul.png" alt="HUSKYAKI ATELIER">
+            </a>
+        </div>
+        <div class="header-left">
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+                <span class="sr-only">Meny</span>
+                <span class="envelope-icon"></span>
+            </button>
+        </div>
         <nav id="primary-nav">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -517,6 +524,25 @@ Och vid liv</p>
         const buttons = Array.from(document.querySelectorAll('.tab-button'));
         const panels = Array.from(document.querySelectorAll('.tab-panel'));
         const lyricToggles = Array.from(document.querySelectorAll('.lyrics-toggle'));
+        const logoCorner = document.querySelector('.logo-corner');
+        const homeSection = document.querySelector('#home');
+
+        // Visa/dölj logo baserat på scroll position
+        function handleScroll() {
+            const homeBottom = homeSection.offsetTop + homeSection.offsetHeight;
+            const scrollPosition = window.scrollY;
+            
+            if (scrollPosition > homeBottom - 100) {
+                logoCorner.classList.add('visible');
+            } else {
+                logoCorner.classList.remove('visible');
+            }
+        }
+
+        // Lyssna på scroll
+        window.addEventListener('scroll', handleScroll);
+        // Kör en gång vid load
+        handleScroll();
 
         // Smooth scroll för navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
