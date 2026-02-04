@@ -1,0 +1,45 @@
+/* Grundläggande styling och typografi */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color:#1E1E1E;
+  color: #FFF1C9;
+  font-family: 'DM Sans', sans-serif;
+}
+
+@font-face {
+  font-family: "Caslon Antique";
+  src: url("/fonts/MittTypsnitt.woff2") format("woff2"),
+       url("/fonts/MittTypsnitt.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Grundläggande länkstyling */
+a {
+  color: #FFF1C9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  #FFF1C9-space: nowrap;
+  border: 0;
+}

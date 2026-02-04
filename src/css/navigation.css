@@ -1,0 +1,158 @@
+/* Navigation och hamburger-meny */
+
+nav {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  top:0.3rem;
+  left:0.3rem
+}
+
+nav ul {
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+nav ul li {
+  margin:0 1rem;
+}
+
+nav ul li a {
+  color:#FFF1C9;
+  text-decoration:none;
+  font-size:1.2rem;
+}
+
+nav ul li a:hover{
+  color:#474972;
+}
+
+/* Hamburger/envelope nav */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.envelope-icon {
+  display: block;
+  width: 34px;
+  height: 22px;
+  position: relative;
+  border: 2px solid #FFF1C9;
+  border-radius: 3px;
+}
+
+.envelope-icon::after,
+.envelope-icon::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  height: 2px;
+  background: #FFF1C9;
+  transition: transform 0.25s ease, top 0.25s ease, opacity 0.2s ease;
+}
+
+.envelope-icon::before {
+  top: 9px;
+  transform: skewY(-22deg);
+}
+
+.envelope-icon::after {
+  top: 9px;
+  transform: skewY(22deg);
+}
+
+.nav-toggle.open .envelope-icon::before {
+  opacity: 1;
+  top: 7px;
+  left: 6px;
+  right: 6px;
+  transform: none;
+}
+
+.nav-toggle.open .envelope-icon::after {
+  opacity: 1;
+  top: 13px;
+  left: 6px;
+  right: 6px;
+  height: 2px;
+  background: #FFF1C9;
+  border: none;
+  transform: none;
+}
+
+body.has-hamburger header {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+  z-index: 200;
+}
+
+body.has-hamburger .nav-toggle {
+  display: inline-flex;
+}
+
+body.has-hamburger nav {
+  width: 100%;
+  position: relative;
+  z-index: 200;
+}
+
+body.has-hamburger nav ul {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(260px, 90vw);
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0.5rem 0.85rem;
+  background:transparent;
+  z-index: 500;
+  pointer-events: auto;
+}
+
+body.has-hamburger nav.open ul {
+  display: flex;
+}
+
+body.has-hamburger nav ul li {
+  margin: 0;
+}
+
+/* Desktop: horisontell men styrd av hamburgaren (droppar ned) */
+@media (min-width: 768px) {
+  body.has-hamburger nav ul {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0.75rem 0.85rem;
+    border: 1px solid rgba(0,0,0,0.12);
+    border-radius: 10px;
+    z-index: 500;
+    pointer-events: auto;
+  }
+
+  body.has-hamburger nav.open ul {
+    display: flex;
+  }
+}

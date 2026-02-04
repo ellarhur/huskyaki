@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huskyaki Atelier</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body class="has-hamburger landing-page one-pager">    
+    <header class="fixed-header">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+            <span class="sr-only">Meny</span>
+            <span class="envelope-icon"></span>
+        </button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#merch">Support</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section hero-section">
+        <div class="centered-content logo-hero">
+            <img src="img/Reverie.png" alt="HUSKYAKI ATELIER">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <div class="centered-content">
+            <h2>About</h2>
+            <p>Huskyaki Atelier is a music & art company based in Huskvarna, Sweden. <br />
+                Composing, recording & producing true handicraft on location or in-house.</p>
+        </div>
+    </section>
+
+    <!-- WORK SECTION -->
+    <section id="work" class="section work-section">
+        <div class="work-container">
+            <h2>Work</h2>
+            
+            <!-- MARQUIS -->
+            <div class="project-block" id="marquis">
+                <div class="tabs">
+                    <div class="tab-header">
+                        <h3>Marquis (2025)</h3>
+                    </div>
+                    <div class="tab-buttons" role="tablist" aria-label="Marquis innehåll">
+                        <button class="tab-button active" role="tab" aria-selected="true" aria-controls="marquis-tab-about" id="marquis-btn-about" data-target="marquis-tab-about">about</button>
+                        <button class="tab-button" role="tab" aria-selected="false" aria-controls="marquis-tab-listen" id="marquis-btn-listen" data-target="marquis-tab-listen">listen</button>
+                        <button class="tab-button" role="tab" aria-selected="false" aria-controls="marquis-tab-tracklisting" id="marquis-btn-tracklisting" data-target="marquis-tab-tracklisting">track listing</button>
+                        <button class="tab-button" role="tab" aria-selected="false" aria-controls="marquis-tab-artwork" id="marquis-btn-artwork" data-target="marquis-tab-artwork">artwork</button>
+                        <button class="tab-button" role="tab" aria-selected="false" aria-controls="marquis-tab-credits" id="marquis-btn-credits" data-target="marquis-tab-credits">credits</button>
+                    </div>
+
+                    <div class="tab-panels">
+                        <section class="tab-panel active" id="marquis-tab-about" role="tabpanel" aria-labelledby="marquis-btn-about">
+                            <p>It didn't start as an album. It was more than that from the start.</p> <br />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </section>
+
+                        <section class="tab-panel" id="marquis-tab-listen" role="tabpanel" aria-labelledby="marquis-btn-listen" hidden>
+                            <p>Listen to the album:</p>
+                            <ul class="song-list">
+                                <li><a href="#" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+                                <li><a href="#" target="_blank" rel="noopener noreferrer">Apple Music</a></li>
+                                <li><a href="#" target="_blank" rel="noopener noreferrer">Soundcloud</a></li>
+                            </ul>
+                        </section>
+
+                        <section class="tab-panel" id="marquis-tab-tracklisting" role="tabpanel" aria-labelledby="marquis-btn-tracklisting" hidden>
+                            <h3>Track listing</h3>
+                            <ul class="song-list">
+                                <li>
+                                    Colaba
+                                    <button class="lyrics-toggle" data-lyrics="marquis-lyrics-colaba">Lyrics</button>
+                                    <div class="lyrics-block" id="marquis-lyrics-colaba" hidden>
+                                        <p>Lyrics coming!</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Loserheart
+                                    <button class="lyrics-toggle" data-lyrics="marquis-lyrics-loserheart">Lyrics</button>
+                                    <div class="lyrics-block" id="marquis-lyrics-loserheart" hidden>
+                                        <p class="lyrics-text">I got this newborn energy
+Like a long lost camerabattery
+I will float like a butterfly
+
+Basketballs and green grass, morningdew
+Truckdrivers honking, kids go "Wooh!"
+I will never leave your side
+Please standby
+
+A rebel without a cause
+We're shooting thru the ceiling
+A one in a million night
+In a stupid happy life
+
+I shillyshally the start
+No wonder I am losing
+Losing is my art
+I tend my loserheart
+
+I'll have a beer, do you want one?
+Lets go swimmin' in the sun
+I've been waiting all my life
+And now it's time
+
+A rebel without a cause
+We're shooting thru the ceiling
+A one in a million night
+In a stupid happy life
+
+I shillyshally the start
+No wonder I am losing
+Losing is my art
+I tend my loserheart
+
+I tend my loserheart
+I tend my loserheart
+I tend my loserheart</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Premonition
+                                    <button class="lyrics-toggle" data-lyrics="marquis-lyrics-premonition">Lyrics</button>
+                                    <div class="lyrics-block" id="marquis-lyrics-premonition" hidden>
+                                        <p class="lyrics-text">Time just bend for the worst men
+Walking on thin ice again
+Put my head in the trombone
+A little woozy by the gravestone
+
+You learned to build in the harbor
+Escaping all the disorder
+Oh say it one more time
+Turn me back online
+
+I try to hang on while we're falling apart
+As if falling apart was a way to hang on
+So tell me how can I resist
+Oh please be something more than this
+
+I need to be strong as we´re drifting apart
+But the further apart the stronger the need
+So tell me how can I resist
+Oh please be something more than this
+
+When I left you that evening
+I felt something like a warning
+Your face keep on appearing
+My life of magical thinking
+
+Every day like a new wave
+We don't star in a rigged game
+Window calling a snowstorm
+I'm rusting please come home
+
+I try to hang on while we're falling apart
+As if falling apart was a way to hang on
+So tell me how can I resist
+Oh please be something more than this
+
+I need to be strong as we´re drifting apart
+But the further apart the stronger the need
+So tell me how can I resist
+Oh please be something more than this</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Krøyer
+                                    <button class="lyrics-toggle" data-lyrics="marquis-lyrics-kroyer">Lyrics</button>
+                                    <div class="lyrics-block" id="marquis-lyrics-kroyer" hidden>
+                                        <p>Lyrics coming!</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Reverie
+                                    <button class="lyrics-toggle" data-lyrics="marquis-lyrics-reverie">Lyrics</button>
+                                    <div class="lyrics-block" id="marquis-lyrics-reverie" hidden>
+                                        <p class="lyrics-text">It's happy hour
+And pouring down
+Hide under the marquis
+
+The morning after
+You came around
+And tossed me the car keys
+
+I wanna freeze this for winter
+Embalm it all in my skull
+After our first kiss
+John Silver began to light a road
+
+How did you break into my reverie
+Forgive me and let me forgive you
+How did you break into my reverie
+I slip away it's my final act of love
+
+Let's tuck it in
+A starry night
+We cancel the party
+
+From smalltown gossip
+To anywhere
+Like Gilbert and Arnie
+
+Walk on the first snow of winter
+A brush of refreshing blue 
+When I speak words just wither
+I reap just what I stole, huh
+
+how did you break into my reverie
+forgive me and let me forgive you
+how did you break into my reverie
+I slip away it's my final act of
+
+What about the stronghold that we were building
+Every blissful moment lost in a lie
+End in a lie
+
+How did you break into my reverie
+Forgive me and let me forgive you
+How did you break into my reverie
+I slip away it's my final act of love
+A final act of love</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Balloon
+                                    <button class="lyrics-toggle" data-lyrics="marquis-lyrics-balloon">Lyrics</button>
+                                    <div class="lyrics-block" id="marquis-lyrics-balloon" hidden>
+                                        <p class="lyrics-text">We're gonna have a round you and I, and New York you can join us too
+You wanted to die the other night
+Any change now, are you alright?
+
+First of many random goodbyes but daddy I don't feel a thing
+You taught me to see thru the void
+Im late now, talk you soon
+
+They burned down the barn 
+Am I embarrassing you?
+
+You saw angels in the garden and went insane
+But you came back and showed me 
+Am I embarrassing?
+
+The war with myself ..</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="tab-panel" id="marquis-tab-artwork" role="tabpanel" aria-labelledby="marquis-btn-artwork" hidden>
+                            <div class="artwork-container"><img src="img/marquis.jpg" alt="Marquis"></div>
+                        </section>
+
+                        <section class="tab-panel" id="marquis-tab-credits" role="tabpanel" aria-labelledby="marquis-btn-credits" hidden>
+                            <ul class="credits-list">
+                                <h3>Martin Åkesson Hummerdahl</h3>
+                                <p>Songwriting, recording, producing, mastering, sound editing, guitar, keys, bass</p>
+                                <h3>Elton Hummerdahl</h3>
+                                <p>Keys, music production, mastering</p>
+                                <h3>Andreas Hummerdahl</h3>
+                                <p>Bass, vocals & guitar</p>
+                                <h3>Oliver Hüller</h3>
+                                <p>Percussion & guitar</p>
+                                <h3>Ella Åkesson Hummerdahl</h3>
+                                <p>Vocals</p>
+                                <h3>Sara Freij Hummerdahl</h3>
+                                <p>Violin</p>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STÅLSÄTRA -->
+            <div class="project-block" id="stalsatra">
+                <div class="tabs">
+                    <div class="tab-header">
+                        <h3>Stålsätra (2023)</h3>
+                    </div>
+                    <div class="tab-buttons" role="tablist" aria-label="Stålsätra innehåll">
+                        <button class="tab-button active" role="tab" aria-selected="true" aria-controls="stalsatra-tab-about" id="stalsatra-btn-about" data-target="stalsatra-tab-about">About</button>
+                        <button class="tab-button" role="tab" aria-selected="false" aria-controls="stalsatra-tab-listen" id="stalsatra-btn-listen" data-target="stalsatra-tab-listen">Listen</button>
+                        <button class="tab-button" role="tab" aria-selected="false" aria-controls="stalsatra-tab-tracklisting" id="stalsatra-btn-tracklisting" data-target="stalsatra-tab-tracklisting">Track listing</button>
+                        <button class="tab-button" role="tab" aria-selected="false" aria-controls="stalsatra-tab-artwork" id="stalsatra-btn-artwork" data-target="stalsatra-tab-artwork">Artwork</button>
+                        <button class="tab-button" role="tab" aria-selected="false" aria-controls="stalsatra-tab-credits" id="stalsatra-btn-credits" data-target="stalsatra-tab-credits">Credits</button>
+                    </div>
+
+                    <div class="tab-panels">
+                        <section class="tab-panel active" id="stalsatra-tab-about" role="tabpanel" aria-labelledby="stalsatra-btn-about">
+                            <p>It didn't start as an album. It was more than that from the start.</p> <br />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </section>
+
+                        <section class="tab-panel" id="stalsatra-tab-listen" role="tabpanel" aria-labelledby="stalsatra-btn-listen" hidden>
+                            <p>Listen to the album:</p>
+                            <ul class="song-list">
+                                <li><a href="#" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+                                <li><a href="#" target="_blank" rel="noopener noreferrer">Apple Music</a></li>
+                                <li><a href="#" target="_blank" rel="noopener noreferrer">Soundcloud</a></li>
+                            </ul>
+                        </section>
+
+                        <section class="tab-panel" id="stalsatra-tab-tracklisting" role="tabpanel" aria-labelledby="stalsatra-btn-tracklisting" hidden>
+                            <h3>Track listing</h3>
+                            <ul class="song-list">
+                                <li>
+                                    Mufumbiro
+                                    <button class="lyrics-toggle" data-lyrics="stalsatra-lyrics-mufumbiro">Lyrics</button>
+                                    <div class="lyrics-block" id="stalsatra-lyrics-mufumbiro" hidden>
+                                        <p>Vi har Skavsta-sår i lilla forden
+Men du är DJ, så vi skriker ut halsen
+Det är en skog i dig som ingen kommer åt
+När du vill ha visning är det låst
+
+Och när dom lyser och rör blir du liten och skygg
+Malplacerad lövtunn sömn
+Du haltar runt med silverrygg
+Men det kommer att spricka upp
+Jag vet det och du vet
+
+Midnatt, Stoneleigh på hemmabänken
+Rött neonljus, 0-5 till bekymren
+Får du ge recept på San Sebastián
+Jag behöver stå över den här rundan
+
+Och när dom lyser och rör blir jag liten och skygg
+Malplacerad lövtunn sömn
+En försvunnen silverrygg
+Men det kommer att spricka upp
+Du visste och jag vet
+
+Jag gör som Homer, ställer bilen
+Längesen jag såg stjärnorna</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Flyger på nätterna
+                                    <button class="lyrics-toggle" data-lyrics="stalsatra-lyrics-flyger">Lyrics</button>
+                                    <div class="lyrics-block" id="stalsatra-lyrics-flyger" hidden>
+                                        <p>Mina riktigt riktiga vänner
+Kan räknas på mina fingrar
+Och jag är hellre helt själv
+Än låtsas vara nån annan
+
+Jag lovar aldrig skrämma dig igen
+Bara sitt här så väntar vi ner
+Dom blinda sover nu
+Men vi flyger på nätterna
+
+Jag har luktat på fel blommor
+Jag har gått i fel gränder
+Och det som jag hatar mest av allt
+Fick jag i mig till slut
+
+Jag lovar aldrig skrämma dig igen
+Bara sitt här så väntar vi ner
+Dom blinda sover nu
+Men vi flyger på nätterna
+
+Jag lovar aldrig skrämma dig igen
+Bara sitt här så väntar vi ner
+Dom blinda sover nu
+Men vi flyger på nätterna
+
+Vad ska jag göra då
+Det finns det ingen som
+Kan tala om för mig, för mig,
+För mig, för mig
+
+Vad ska jag göra då
+Det finns det ingen som
+Kan tala om för mig, för mig,
+För mig, för mig
+
+Jag lovar aldrig skrämma dig igen
+Bara sitt här så väntar vi ner
+Dom blinda sover nu
+Men vi flyger på nätterna
+
+Vem minns mig när jag försvinner
+Jag tror du redan glömt allt
+Men det som jag hatar mest av allt
+Ska du aldrig få se</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Hundarna
+                                    <button class="lyrics-toggle" data-lyrics="stalsatra-lyrics-hundarna">Lyrics</button>
+                                    <div class="lyrics-block" id="stalsatra-lyrics-hundarna" hidden>
+                                        <p>Blev något fel med kameran
+Försökte skaka liv i oss
+Spillde ner min bästa skjorta
+Slängde bara på mig nåt
+
+Gärdet sörjde hundarna
+Så stod du där i samma rum
+Tog hand om varje ord & skratt
+Som råka trilla ur din mun
+
+Kvällen längtar utanför 
+Behöver bara sträcka oss
+Försöker ta mig loss
+Mitt hjärta så lost in translation
+
+Hur kan man glömma dofter, piruetter
+Rosa himmel, rosa skor
+Jag vill aldrig förlora det
+Jag vet inte vad jag höll på med
+
+Jag är rädd för att bli övergiven
+Jag är fake och gör fel hela tiden
+Jag vill aldrig förlora det
+Jag vill få dig att känna dig fri
+Och vid liv
+
+Vet att du har haft ett jobbigt år
+Det är inget som du skyltar med
+För mig är du en Whitney Houston-sång
+Slentrian, som jag vill höra om
+
+Kvällen längtar utanför 
+Behöver bara sträcka oss
+Försöker ta mig loss
+Vill inte missa ditt crazy kitten smile
+
+Hur kan man glömma dofter, piruetter
+Rosa himmel, rosa skor
+Jag vill aldrig förlora det
+Jag vet inte vad jag höll på med
+
+Jag är rädd för att bli övergiven
+Jag är fake och gör fel hela tiden
+Men jag vill aldrig förlora dig
+Jag vill få dig att känna dig fri
+Och vid liv
+
+Jag är rädd för att bli övergiven
+Jag är fake och gör fel hela tiden
+Men jag vill aldrig förlora dig
+Jag vill få dig att känna dig fri
+Och vid liv</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="tab-panel" id="stalsatra-tab-artwork" role="tabpanel" aria-labelledby="stalsatra-btn-artwork" hidden>
+                            <div class="artwork-container"><img src="img/Stålsätra.jpeg" alt="Stålsätra"></div>
+                        </section>
+
+                        <section class="tab-panel" id="stalsatra-tab-credits" role="tabpanel" aria-labelledby="stalsatra-btn-credits" hidden>
+                            <ul class="credits-list">
+                                <h3>Martin Åkesson Hummerdahl</h3>
+                                <p>Songwriting, recording, producing, mastering, sound editing, guitar, keys, bass</p>
+                                <h3>Elton Hummerdahl</h3>
+                                <p>Music production, mix</p>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MERCH SECTION -->
+    <section id="merch" class="section">
+        <div class="centered-content">
+            <h2>Support</h2>
+            <p>Support your local freak! <br />
+                <a href="https://www.patreon.com/c/huskyaki/" target="_blank" rel="noopener noreferrer">Patreon</a></p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+        <div class="centered-content">
+            <h2>Contact</h2>
+            <p>Huskyaki Atelier<br />
+                Huskvarna, Sweden<br />
+                contact@huskyaki.com<br /></p>
+
+            <p>Songwriter, music producer, audio engineer & concept creator<br />
+                Martin Åkesson Hummerdal <br />
+                martin@huskyaki.com <br /></p>
+            <p>Creative lead & developer<br />
+                Ella Åkesson Hummerdal <br />
+                ella@huskyaki.com <br /></p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li><a href="#">Tiktok</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Youtube</a></li>
+            </ul>
+            <div class="copyright">© 2025 Huskyaki Atelier™. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggle = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('#primary-nav');
+        const buttons = Array.from(document.querySelectorAll('.tab-button'));
+        const panels = Array.from(document.querySelectorAll('.tab-panel'));
+        const lyricToggles = Array.from(document.querySelectorAll('.lyrics-toggle'));
+
+        // Smooth scroll för navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Stäng menyn efter klick
+                    if (nav) {
+                        nav.classList.remove('open');
+                        if (toggle) {
+                            toggle.setAttribute('aria-expanded', 'false');
+                            toggle.classList.remove('open');
+                        }
+                    }
+                }
+            });
+        });
+
+        // Hamburger meny toggle
+        if (toggle && nav) {
+            toggle.addEventListener('click', () => {
+                const open = nav.classList.toggle('open');
+                toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+                toggle.classList.toggle('open', open);
+            });
+        }
+
+        // Tab funktionalitet
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetId = btn.dataset.target;
+                const projectBlock = btn.closest('.project-block');
+                const projectButtons = projectBlock.querySelectorAll('.tab-button');
+                const projectPanels = projectBlock.querySelectorAll('.tab-panel');
+
+                projectButtons.forEach(b => {
+                    b.classList.toggle('active', b === btn);
+                    b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+                });
+
+                projectPanels.forEach(p => {
+                    const isActive = p.id === targetId;
+                    p.classList.toggle('active', isActive);
+                    p.hidden = !isActive;
+                });
+            });
+        });
+
+        // Lyrics toggle
+        lyricToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const targetId = toggle.dataset.lyrics;
+                const block = document.getElementById(targetId);
+                if (!block) return;
+                const wasHidden = block.hidden;
+                
+                // Stäng andra lyrics i samma projekt
+                const projectBlock = toggle.closest('.project-block');
+                projectBlock.querySelectorAll('.lyrics-block').forEach(b => {
+                    b.hidden = true;
+                    b.classList.remove('open');
+                });
+                
+                if (wasHidden) {
+                    block.hidden = false;
+                    block.classList.add('open');
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>

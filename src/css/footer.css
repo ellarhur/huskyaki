@@ -1,0 +1,38 @@
+/* Footer styling */
+
+footer {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding: 1rem 0 1.25rem;
+}
+
+.footer-content ul {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.footer-content ul li {
+  margin:0 1rem;
+}
+
+.footer-content ul li a {
+  color:#FFF1C9;
+  text-decoration:none;
+  font-size:1.2rem;
+}
+
+.footer-content ul li a:hover{
+  color:orange;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #FFF1C9;
+  text-align: center;
+  margin-top: 1rem;
+}
