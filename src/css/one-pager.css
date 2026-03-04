@@ -208,6 +208,11 @@ footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/marquis.jpg');
   }
   
+  .artwork-container {
+    width: 100%;
+    max-width: 300px;
+  }
+  
   .work-container > h2 {
     font-size: 2rem;
   }
