@@ -8,22 +8,15 @@ body, html {
   display: flex;
   flex-direction: column;
   background-color:#1E1E1E;
-  color: #FFF1C9;
-  font-family: 'DM Sans', sans-serif;
-}
-
-@font-face {
-  font-family: "Caslon Antique";
-  src: url("/fonts/MittTypsnitt.woff2") format("woff2"),
-       url("/fonts/MittTypsnitt.woff") format("woff");
-  font-weight: normal;
+  color: #FFF;
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
   font-style: normal;
-  font-display: swap;
 }
 
 /* Grundläggande länkstyling */
 a {
-  color: #FFF1C9;
+  color: #FFF;
   text-decoration: none;
 }
 
@@ -40,6 +33,15 @@ a:hover {
   margin: -1px;
   overflow: hidden;
   clip: rect(0,0,0,0);
-  #FFF1C9-space: nowrap;
   border: 0;
+}
+
+i {
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  text-decoration-thickness: 2px;
 }

@@ -21,7 +21,7 @@ footer {
 }
 
 .footer-content ul li a {
-  color:#FFF1C9;
+  color:#FFF;
   text-decoration:none;
   font-size:1.2rem;
 }
@@ -32,7 +32,7 @@ footer {
 
 .copyright {
   font-size: 0.8rem;
-  color: #FFF1C9;
+  color: #FFF;
   text-align: center;
   margin-top: 1rem;
 }

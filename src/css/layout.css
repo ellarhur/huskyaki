@@ -85,11 +85,12 @@ main {
 .content {
   position: relative;
   z-index: 1;
-  color: #FFF1C9;
+  color: #FFF;
   text-align: center;
   padding-top: 20%;
-  font-family: sans-serif;
-}
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: normal;}
 
 .centered-content {
   display: flex;
@@ -101,8 +102,11 @@ main {
 }
 
 .centered-content img {
-  width: clamp(240px, 55vw, 520px);
-  max-height: 60vh;
+  width: auto;
+  max-height: 600px;
   height: auto;
   display: block;
+  transform: translateX(30px);
+
+  
 }

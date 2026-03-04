@@ -9,45 +9,20 @@
   margin:0 auto;
 }
 
-.logopic img {
-  width: 100%;
-  height: auto;
-}
-
-.logo-hero {
-  width: 900px;
-  margin: 0 auto;
-}
-
-.logo-hero img {
-  width: auto;
-  height: 900px;
-  object-fit: contain;
-  display: block;
-}
-
-.logo-container {
-  display: block;
-  width: 140px;
-}
-
-.logo-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.straybone-inthecorner {
-  position: absolute;
-  top: 0.75rem;
-  left: 3.5rem;
-}
 
 /* Artwork container */
 .artwork-container {
   width: 100%;
   height: auto;
-  display: block;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #1E1E1E;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .artwork-container img {
@@ -79,7 +54,7 @@
   width: min(960px, 94vw);
   margin: 0 auto;
   padding: 1.5rem 0;
-  color: #FFF1C9;
+  color: #FFF;
 }
 
 .tab-header {
@@ -103,11 +78,12 @@
 
 .tab-button {
   background: none;
-  color: #FFF1C9;
+  color: #FFF;
   border: none;
   padding: 0.35rem 0;
   cursor: pointer;
   font-size: 1rem;
+  font-family: inherit;
   letter-spacing: 0.01em;
   border-bottom: 2px solid transparent;
   transition: border-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
@@ -140,6 +116,12 @@
 
 .tab-panel.active {
   display: block;
+}
+
+/* Centrera text i about och listen panels */
+#stalsatra-tab-about,
+#stalsatra-tab-listen {
+  text-align: center;
 }
 
 /* Song list och credits */
@@ -186,7 +168,7 @@
 }
 
 .song-list a {
-  color: #FFF1C9;
+  color: #FFF;
   text-decoration: underline;
 }
 
@@ -199,9 +181,10 @@
   border: none;
   border-radius: 0;
   background: none;
-  color: #FFF1C9;
+  color: #FFF;
   cursor: pointer;
   font-size: 0.9rem;
+  font-family: inherit;
   text-decoration: underline;
   transition: color 0.2s ease, opacity 0.2s ease;
 }
@@ -225,5 +208,5 @@
 
 .lyrics-block p {
   margin: 0;
-  #FFF1C9-space: pre-line;
+  white-space: pre-line;
 }
