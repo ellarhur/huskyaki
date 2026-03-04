@@ -18,10 +18,13 @@ body, html {
 a {
   color: #FFF;
   text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
-  color: orange;
+  color: #72771a;
+  text-shadow: 0 0 10px rgba(150, 200, 100, 0.6), 
+               0 0 20px rgba(150, 200, 100, 0.4);
 }
 
 /* Screen reader only */
