@@ -216,20 +216,24 @@ footer {
     max-width: 300px;
   }
   
+  .tab-button {
+    font-size: 0.85rem;
+  }
+  
   .work-container > h2 {
     font-size: 2rem;
   }
   
   .logo-hero {
     width: 100%;
-    max-width: 300px;
-    transform: translateX(0);
+    max-width: 500px;
+    transform: translateX(-10px);
   }
   
   .logo-hero img {
     height: auto;
-    width: 80vw;
-    max-width: 300px;
+    width: 95vw;
+    max-width: 550px;
   }
 }
 

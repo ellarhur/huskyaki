@@ -131,6 +131,12 @@ body.has-hamburger nav ul li {
   margin: 0;
 }
 
+@media (max-width: 767px) {
+  body.has-hamburger nav ul {
+    top: 5rem;
+  }
+}
+
 @media (min-width: 768px) {
   body.has-hamburger nav ul {
     display: none;
