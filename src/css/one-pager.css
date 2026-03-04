@@ -192,10 +192,35 @@ footer {
   
   .hero-section {
     min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #about {
+    margin-top: 35vh;
+  }
+  
+  #work {
+    margin-top: 35vh;
+  }
+  
+  #contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/marquis.jpg');
   }
   
   .work-container > h2 {
     font-size: 2rem;
+  }
+  
+  .logo-hero {
+    width: 100%;
+    max-width: 300px;
+    transform: translateX(0);
+  }
+  
+  .logo-hero img {
+    height: 500px;
+    width: auto;
   }
 }
 

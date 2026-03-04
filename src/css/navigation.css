@@ -113,11 +113,11 @@ body.has-hamburger nav ul {
   top: 4rem;
   left: 50%;
   transform: translateX(-50%);
-  width: min(260px, 90vw);
-  flex-direction: column;
+  width: auto;
+  flex-direction: row;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.75rem 0.5rem 0.85rem;
+  gap: 1.25rem;
+  padding: 0.75rem 0.85rem;
   background:transparent;
   z-index: 500;
   pointer-events: auto;
@@ -131,7 +131,6 @@ body.has-hamburger nav ul li {
   margin: 0;
 }
 
-/* Desktop: horisontell men styrd av hamburgaren (droppar ned) */
 @media (min-width: 768px) {
   body.has-hamburger nav ul {
     display: none;
